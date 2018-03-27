@@ -1,0 +1,13 @@
+<h1>Edit Article</h1>
+<%= form_for(@article) do |f| %>
+  <h2> <%= f.label :title %> </h2>
+  <%= f.text_area :title, class: "text-area" %>
+  <h2> <%= f.label :content %> </h2>
+  <%= f.text_area :content, class: "text-area" %>
+  <%= f.submit %>
+<% end %>
+
+<br>
+<br>
+<br>
+<p> <i class="fas fa-arrow-circle-left"></i> <%= link_to "Back to Articles", articles_path %> </p>
